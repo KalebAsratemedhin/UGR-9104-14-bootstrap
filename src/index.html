@@ -2,119 +2,142 @@
 <html lang = "en">
   <head>
     <meta lang="en-us" charset="utf-8" >
-    <title>home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="dist/bootstrap.css">
   </head>
   <body>
-    <header>
-      <img src="images/my_logo.PNG" alt="logo" width="50" height="50">
-      <nav>
-        <a href="index.html">Home</a> <br>
-        <button class="menu-button"><img src="images/menu.png" alt="menu logo" width="30" height="30"></button>
-        <div class="menu-content">
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>          
-            </ul>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <img src="images/portrait-pic.jpg" alt="A portrait picture of myself." height="700">
-      <hgroup>
-        <h1>Hey, I am Kaleb Asratemedhin</h1>
-        <p>Software Engineering Student at <abbr title="Addis Ababa University">AAU</abbr> <br> 
-          Part-time full stack Software Engineer at Google<br>
-          3D modeling artist.</p>
-      </hgroup>
-      <article>
-        <h2>Hear about me from people who have worked with me...</h2>
-        <blockquote cite="https://twitter.com/YohannesMikiyas">
-          <p>
-            Kaleb is a master of the fine art of full stack developement. He is
-            one short of a magician in that world. I am glad for having worked
-            with him.
-          </p>
-          <footer>&nbsp;—<i>Yohannes Mikiyas</i>, Senior Software Engineer at Google.</footer>
-        </blockquote>
-        <blockquote cite="https://linkedin.com/in/SaraGetachew">
-          <p>
-            I love how he is kind, curious and cares about his coworkers. He is
-            the spirt of the team wherever he goes.
-          </p>
-          <footer>&nbsp;—<i>Sara Getachew</i>, Systems Analyist at Prime Software Plc.</footer>
-        </blockquote>
-        <blockquote cite="https://linkedin.com/in/WillardDanson">
-          <p>
-            If you want your project to be a success and completed on time, he
-            is the guy to go to. In the two years and 3 months that we worked
-            together, I haven't seen him fail to acomplish his projects as he
-            promised to customers. Never!
-          </p>
-          <footer>&nbsp;—<i>Willard Danson</i>, Senior Software Engineer at HyperlinkInfoSystem.</footer>
-        </blockquote>
-      </article>
-      <section>
-        <hr>
-        <h2>Latest Blog Posts</h2>
-        <article>
-          <h3>A2SV Generative AI Hackathon Project Expo</h3>
-          <p>
-            Total Chills! The day has come to join A2SVians at the Generative AI
-            Hackathon Project Expo on November 11th (9 am - 6 pm) and November
-            12th (9 am - 12 pm). This is a great chance to see innovation
-            first-hand at its best. Eight talented finalists teams from Morocco,
-            Kenya, Namibia, Ethiopia, and Cameroon showcase their digital
-            projects for Africa. 🌐
-            <a href="blog.html#nov10-2023">more >></a>
-          </p>
-        </article>
-        <article>
-          <h3>Check out our blender animated short video on youtube</h3>
-          <p>
-            It took us, my friend Ben J. Lee and me, 20 days to make this using
-            only blender. I hope you will like it.
-            <a href="https://www.youtube.com/watch?v=cyp7d-jEvNA"> Spring - blender short animation</a>
-            <a href="blog.html#apr30-2020">more >></a>
-          </p>
-        </article>
-        <article>
-          <h3>Teddy Afro Concert</h3>
-          <p>
-            Every body hands in the air!!! The beloved king of music, Teddy, is back on the stage! I
-            feel like the whole country is in this stadium. Peace and chill out
-            people!
-            <a href="blog.html#feb22-2020">more >></a>
-          </p>
-        </article>
-      </section>
-      <section>
-        <hr>
-        <h2>My Portfolio projects</h2>
-        <p>Have a look at some of my projects ranging from fully autonomous micro-mouse robot to 3D animated short movies.</p>
-        <figure>
-          <img src="images/micro-mouse-1.jpg" alt="micro-mouse sample mini robot" width="300" height="300">
-          <img src="images/Spring-Open-Movie-blender_org.jpg" alt="Spring short movie" width="300" height="300">
-          <figcaption>Some of my projects. Micro-mouse robot(left) and 3D animation(right).</figcaption>
-        </figure>
-        <p>You can find further information about such projects and others <a href="portfolio.html">here</a>.</p>
-      </section>
-    </main>
-    <footer>
-      <hr>
-      <a href="https://twitter.com/risekab"><img src="images/twitter.png" alt="twitter logo" width="50" height="50"></a>
-      <a href="https://instagram.com/daffytribbiani/"><img src="images/instagram.png" alt="instagram logo" width="50" height="50"></a>
-      <a href="https://t.me/Thequantumduck"><img src="images/telegram.png" alt="telegram logo" width="50" height="50"></a>
-      <a href="https://linkedin.com/in/kaleb-asratemedhin-81748625b"><img src="images/linkedin.png" alt="linked in logo" width="50" height="50"></a>
-        <p>copyright &copy; all rights reserved.</p>
-        <address>
-          Author: Kaleb Asratemedhin <br>
-          Address: Addis Ababa, Ethiopia <br>
-          Telephone: +251996304541 <br>
-       </address>
-       <a href="index.html">back to top</a>
+      <header class="container-fluid bg-body-tertiary " id="top">
+        <nav class="navbar navbar-expand-md row-cols-md-6">
+            <div class="navbar-brand col-md-4 d-flex justify-content-center ">
+              <img class="rounded-circle" src="images/my_logo.PNG" alt="logo" width="50" height="50">
+            </div>
+            <a class="d-flex justify-content-end nav-link active  "href="index.html">Home</a> 
 
-    </footer>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#hamburger-content" aria-controls="hamburger-content" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/menu.png" alt="menu logo" width="30" height="30">
+            </button>
+            
+            <div class="collapse navbar-collapse col-md-4 " id="hamburger-content">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li><hr>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li><hr>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li><hr>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+      <main>
+        <div class="container-fluid d-flex align-items-center bg-warning-subtle"> 
+            <div class="rounded-circle ">
+                <img src="images/portrait-pic.png" alt="self portrait" width="400" height="400" >
+
+            </div>
+          <hgroup class="f">
+            <h1>Hey, I am Kaleb Asratemedhin</h1>
+            <p>Software Engineering Student at <abbr title="Addis Ababa University">AAU</abbr> <br> 
+              Part-time full stack Software Engineer at Google<br>
+              3D modeling artist.</p>
+          </hgroup>
+        </div>    
+        <article class="bg-white p-3">
+          <h2>Hear about me from people who have worked with me...</h2>
+          <blockquote class="bg-success-subtle p-3" cite="https://twitter.com/YohannesMikiyas">
+            <p>
+              Kaleb is a master of the fine art of full stack developement. He is
+              one short of a magician in that world. I am glad for having worked
+              with him.
+            </p>
+            <footer>&nbsp;—<i>Yohannes Mikiyas</i>, Senior Software Engineer at Google.</footer>
+          </blockquote>
+          <blockquote class="bg-success-subtle p-3" cite="https://linkedin.com/in/SaraGetachew">
+            <p>
+              I love how he is kind, curious and cares about his coworkers. He is
+              the spirt of the team wherever he goes.
+            </p>
+            <footer>&nbsp;—<i>Sara Getachew</i>, Systems Analyist at Prime Software Plc.</footer>
+          </blockquote>
+          <blockquote class="bg-success-subtle p-3" cite="https://linkedin.com/in/WillardDanson">
+            <p>
+              If you want your project to be a success and completed on time, he
+              is the guy to go to. In the two years and 3 months that we worked
+              together, I haven't seen him fail to acomplish his projects as he
+              promised to customers. Never!
+            </p>
+            <footer>&nbsp;—<i>Willard Danson</i>, Senior Software Engineer at HyperlinkInfoSystem.</footer>
+          </blockquote>
+        </article>
+        <div class="bg-warning-subtle p-5 d-md-flex  gap-md-4 ">
+          <section class="card bg-light-subtle gap-2 align-self-start mb-4">
+            <!-- <hr> -->
+            <h2 class="card-header">Latest Blog Posts</h2>
+            <article class="card-body p-3">
+              <h3>A2SV Generative AI Hackathon Project Expo</h3>
+              <p>
+                Total Chills! The day has come to join A2SVians at the Generative AI
+                Hackathon Project Expo on November 11th (9 am - 6 pm) and November
+                12th (9 am - 12 pm). This is a great chance to see innovation
+                first-hand at its best. Eight talented finalists teams from Morocco,
+                Kenya, Namibia, Ethiopia, and Cameroon showcase their digital
+                projects for Africa. 🌐
+                <a href="blog.html#nov10-2023">more >></a>
+              </p>
+            </article>
+            <article class="card-body p-3">
+              <h3>Check out our blender animated short video on youtube</h3>
+              <p>
+                It took us, my friend Ben J. Lee and me, 20 days to make this using
+                only blender. I hope you will like it.
+                <a href="https://www.youtube.com/watch?v=cyp7d-jEvNA"> Spring - blender short animation</a>
+                <a href="blog.html#apr30-2020">more >></a>
+              </p>
+            </article>
+            <article class="card-body p-3">
+              <h3>Teddy Afro Concert</h3>
+              <p>
+                Every body hands in the air!!! The beloved king of music, Teddy, is back on the stage! I
+                feel like the whole country is in this stadium. Peace and chill out
+                people!
+                <a href="blog.html#feb22-2020">more >></a>
+              </p>
+            </article>
+          </section>
+          <section class="container bg-info-subtle p-5">\
+            <h2>My Portfolio projects</h2>
+            <p>Have a look at some of my projects ranging from fully autonomous micro-mouse robot to 3D animated short movies.</p>
+            <figure class="d-flex flex-column gap-5">
+              <img class="img-fluid" src="images/micro-mouse-1.jpg" alt="micro-mouse sample mini robot" width="300" height="300">
+              <img class="img-fluid" src="images/Spring-Open-Movie-blender_org.jpg" alt="Spring short movie" width="300" height="300">
+              <figcaption>Some of my projects. Micro-mouse robot(left) and 3D animation(right).</figcaption>
+            </figure>
+            <p>You can find further information about such projects and others <a href="portfolio.html">here</a>.</p>
+          </section>
+        </div>
+      </main>     
+      <footer class="bg-dark text-light p-3 ">
+        <div class="my-5 text-center">
+          <a class=" icon-link icon-link-hover link-info " href="#top">back to top</a>
+        </div>
+        <div class="row align-items-center gy-5">
+          <div class="col-sm-5 gy-4 border-black text-center  row">
+            <a class="col-md-3 col-sm-6 col-6 " href="https://twitter.com/risekab"><img src="images/twitter.png" alt="twitter logo" width="50" height="50"></a>
+            <a class="col-md-3 col-sm-6 col-6" href="https://instagram.com/daffytribbiani/"><img src="images/instagram.png" alt="instagram logo" width="50" height="50"></a>
+            <a class="col-md-3 col-sm-6 col-6" href="https://t.me/Thequantumduck"><img src="images/telegram.png" alt="telegram logo" width="50" height="50"></a>
+            <a class="col-md-3 col-sm-6 col-6" href="https://linkedin.com/in/kaleb-asratemedhin-81748625b"><img src="images/linkedin.png" alt="linked in logo" width="50" height="50"></a>
+          </div>
+
+          <div class="col-10 col-sm d-flex align-items-center justify-content-center ">
+              <p >&copy; all rights reserved.</p>
+          </div>
+          <address class="col-10 text-center col-sm lh-lg" >
+            Author: Kaleb Asratemedhin <br>
+            Address: Addis Ababa, Ethiopia <br>
+            Telephone: +251996304541 <br>
+        </address>
+        </div>
+      </footer>
+      <script src="dist/bootstrap.bundle.js"></script>
   </body>
 </html>
